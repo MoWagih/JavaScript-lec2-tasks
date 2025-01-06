@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AC Remote Control</title>
+    <link rel="stylesheet" href="./ac-remote.css">
+</head>
+<body>
+    <div class="ac-remote">
+        <div class="ac-screen">
+            <div class="top">
+                <h5 id="modeScreen">--</h5>
+                <h5>AUTO</h5>
+            </div>
+            <div class="center">
+                <div class="left">
+                    <h1 id="tempScreen">--</h1>
+                     <img src="./img/Degree.png" alt="Degree">
+                </div>
+                <div id="fanScreen" class="right">
+                    --
+                </div>
+            </div>
+            <div class="bottom">
+                <img src="./img/Cold.png" alt="cold-icon" height="50%">
+            </div>
+        </div>
+        <div class="ac-buttons">
+            <button onclick="toggleAC()" class="power">
+                ON/OFF
+            </button>
+            
+            <div class="temp-button">
+                <button onclick="increamentTemprture()" class="increament">+</button>
+                <h6>TEMP</h6>
+                <button onclick="decreamentTemprture()" class="decreament">-</button>
+            </div>
+            
+            <button onclick="increamentFanSpeed()" class="speed">
+                Speed
+            </button>
+        </div>
+    </div>
+    <script src="./ac-remote.js"></script>
+</body>
+</html>
