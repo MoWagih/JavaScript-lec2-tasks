@@ -54,7 +54,7 @@ function incrementFanSpeed() {
         fanSpeed++;
         fanScreen.innerText = fanSpeed;
         console.log("Fan Speed: " + fanSpeed)
-    } else if (fanSpeed = 3 ) {
+    } else if (fanSpeed = 3 && acStatus == true ) {
         fanSpeed = 1;
         fanScreen.innerText = fanSpeed;
         console.log("Fan Speed: " + fanSpeed)
